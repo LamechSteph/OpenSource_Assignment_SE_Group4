@@ -1,0 +1,129 @@
+/*
+ * FYPTS - Final Year Project Tracking System
+ * Custom Styles
+ *
+ * Overrides and extends Bootstrap 5 for a modern university application look.
+ */
+
+/* Smooth transitions */
+body {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+
+/* Card hover effects */
+.card {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Table hover */
+.table-hover tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+/* Badge refinements */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+/* Progress bar animation */
+.progress-bar {
+    transition: width 0.4s ease;
+}
+
+/* Form focus */
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+/* Button spacing */
+.btn + .btn {
+    margin-left: 0.25rem;
+}
+
+/* Navbar active state */
+.navbar .nav-link.active {
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0.5rem;
+    right: 0.5rem;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1px;
+}
+
+/* Stats cards icon alignment */
+.card .bg-opacity-10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal improvements */
+.modal-content {
+    border: none;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* Alert enhancements */
+.alert-dismissible .btn-close {
+    padding: 0.75rem;
+}
+
+/* Empty state styling */
+.empty-state {
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+/* Print styles for reports */
+@media print {
+    .navbar,
+    .btn,
+    .btn-group {
+        display: none !important;
+    }
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+}
+
+/* Hero section enhancements */
+.bg-primary .opacity-90 {
+    opacity: 0.9;
+}
+
+/* Responsive table improvements */
+@media (max-width: 768px) {
+    .table-responsive .btn-group {
+        display: flex;
+        gap: 2px;
+    }
+    .table-responsive .btn-group .btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Range slider styling */
+.form-range::-webkit-slider-thumb {
+    background: #0d6efd;
+}
+
+.form-range::-moz-range-thumb {
+    background: #0d6efd;
+}
