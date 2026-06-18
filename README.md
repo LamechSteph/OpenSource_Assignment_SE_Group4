@@ -2,7 +2,7 @@
 
 ## Degree Program
 
-Bachelor of Software Engineering
+Bachelor of Science in Software Engineering
 
 ## Group Number
 
@@ -30,6 +30,7 @@ Key Features:
 - Update project status
 - Track project progress percentage
 - Dashboard statistics
+- Project progress (NEW FEATURE)
 
 ## Technologies Used
 
@@ -93,7 +94,7 @@ git add .
 
 Commit Changes:
 
-git commit -m "Initial project setup"
+git commit -m "Initial project setup - Final Year Project Tracking System"
 
 Create Branch:
 
